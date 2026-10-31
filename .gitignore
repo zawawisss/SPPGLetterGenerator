@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+
+# Runtime state (nomor BAST)
+Database/nomor_bast.json
+
+# Hasil generate dokumen
+HASIL/
+
+# Backup lokal
+Database/Database_backup.xlsx
+Template/BAST_backup.docx
+*.bak
+
+# OS / Office temp
+Thumbs.db
+.DS_Store
+~$*
