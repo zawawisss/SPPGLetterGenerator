@@ -1,10 +1,15 @@
 @echo off
 cd /d "%~dp0"
-where python >nul 2>nul
-if errorlevel 1 (
-    echo Python belum terpasang. Install Python 3 dari https://python.org lalu coba lagi.
-    pause
-    exit /b 1
+python --version >nul 2>nul
+if not errorlevel 1 (
+    python "main.py"
+    goto selesai
 )
-python "main.py"
+py -3 --version >nul 2>nul
+if not errorlevel 1 (
+    py -3 "main.py"
+    goto selesai
+)
+echo Python belum terpasang. Install Python 3 dari https://python.org lalu coba lagi.
+:selesai
 pause

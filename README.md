@@ -61,6 +61,22 @@ python -m pip install openpyxl python-docx docxcompose
 
 ---
 
+## Instalasi Cepat (Pengguna Baru)
+
+Untuk pengguna yang tidak paham Git, kirimkan file **`Install_BuatSurat.bat`** yang sudah diisi URL repo. Saat diklik dua kali, script akan:
+
+1. Menanyakan **mau disimpan di folder mana** (tekan Enter untuk folder bawaan `%USERPROFILE%\Buat Surat`, atau ketik folder lain).
+2. Mengunduh aplikasi dari GitHub (ZIP), tanpa perlu Git.
+3. Mengecek Python; kalau belum ada, mencoba install otomatis lewat `winget`.
+4. Membuat shortcut **Buat Surat** di Desktop.
+5. Menjalankan aplikasi.
+
+Syarat: internet aktif, repo GitHub **publik**, dan `REPO_BASE` di bagian atas `Install_BuatSurat.bat` sudah diisi.
+
+> Untuk pemilik repo: ganti `REPO_BASE` dengan URL repo Anda, mis. `https://github.com/username/buat-surat`.
+
+---
+
 ## Cara Menjalankan
 
 1. Buka folder `Buat Surat`.
